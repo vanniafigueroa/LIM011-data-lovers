@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i&display=swap');
+
+h3, h4 {
+    font-family: 'Roboto Mono', monospace; 
+    letter-spacing: 1.5px; 
+    color: ivory;
+    
+
+}
+
+.fa-facebook-f:before {
+    color: #fff;
+    font-size: 2.5em;
+}
+  
+.fa-instagram:before {
+    color: #fff;
+    font-size: 2.5em;
+    display: inline-flex 
+}
+
+.fa-whatsapp:before {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+body {
+    background-image: url('imagenes/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100pv;
+}
+
+.sectionCeroHome {
+    display: flex;
+}
+
+.socialButton {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.socialButton h4 {
+    width: 100%;
+}
+
+
+
+.row {
+    display: flex;
+}
+
+.col-1 {
+  margin-top: 250px; 
+  width: 50%; 
+}   
+
+.infoHome {
+    text-align: center;
+    
+}
+
+.infoHome h3 {
+    text-align: center;
+    width: 100%;
+    
+}
+
+.buttonAtrapalosYa {
+    margin: 0 auto;
+    width:180px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #d63031;
+    border-radius: 6px;
+    border: 2px solid #d63031;
+    margin-right:;
+}
+
+
+.buttonHome {
+    /* margin-left: 130px;
+    margin-top: 5px; */
+    
+}
+
+.download {
+ text-align: center;
+ display: flex;
+ width: 50%;
+ flex-wrap: wrap;
+
+}
+
+.download h4 {
+    width: 100%;
+}
+
+.buttonDownload {
+    /* display: flex; */
+    width: 100%;
+}
+
+.shareFriends {
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.shareFriends h4 {
+    width: 100%;
+}
+
+.socialButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.socialButton img {
+    width: 20px;
+    height: 20px;
+}
+
+img.playStore{
+    width: 160px;
+    height: 60px;
+    margin-right;
+    margin: 0 auto;
+    
+
+}
+
+img.appStore {
+    width: 170px;
+    height: 45px;
+    margin: 0 auto;
+}
