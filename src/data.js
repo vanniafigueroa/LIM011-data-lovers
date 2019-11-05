@@ -5,3 +5,7 @@
 export const example = () => {
   return 'example';
 };
+
+export const pintarPokemon = (POKEMON) => {
+  return POKEMON;
+}
