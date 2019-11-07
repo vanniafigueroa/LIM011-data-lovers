@@ -9,3 +9,4 @@ export const traerDataPokemon = (array) => {
   }
   return newArray;
 }
+
