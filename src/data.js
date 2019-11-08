@@ -10,3 +10,30 @@ export const traerDataPokemon = (array) => {
   return newArray;
 }
 
+export const pokedata = (POKEMON) => {
+  POKEMON.sort((a,b) => {
+    if (a.name < b.name){
+      return -1;  
+    } 
+    if (a.name > b.name){
+      return 1;
+    }
+    return 0;
+  });
+  console.log(pokedata);
+}
+
+export const pokedata2 = (POKEMON) => {
+
+  POKEMON.reverse((a,b) => {
+    if (a.name < b.name){
+      return -1;  
+    } 
+    if (a.name > b.name){
+      return 1;
+    }
+    return 0;
+  });
+  console.log(pokedata2);
+}
+

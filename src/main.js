@@ -1,6 +1,6 @@
 
 import POKEMON from './data/pokemon/pokemon.js'
-import { traerDataPokemon } from './data.js';
+import { traerDataPokemon, pokedata2 } from './data.js';
 
 const dataModificada = traerDataPokemon(POKEMON) //ARRAY DE objetos con 3 caracteristicas;
 const Seccioncard = document.querySelector('#seccion-card');
@@ -25,6 +25,21 @@ Seccioncard.innerHTML = stringTemplate;
 traerDataPokemon(POKEMON);
 //Backtips y es la nueva forma de concatenar cadenas en es6 ${} interpolar variables
 
+
+
+
+//funcion de comparacion con un operador ternario const pokedata = POKEMON.reverse((a,b) => (a.name > b.name ? 1:-1));
+//console.log(pokedata)
+
+
+
+
+//pokedata(POKEMON);
+//console.log(POKEMON);
+
+
+pokedata2(POKEMON);
+console.log(POKEMON);
 
 //menu bar 
 const navbarToggler = document.querySelector(".navbar-toggler");
