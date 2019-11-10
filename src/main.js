@@ -1,28 +1,63 @@
 
 import POKEMON from './data/pokemon/pokemon.js'
-import { traerDataPokemon, pokedata2 } from './data.js';
+import { traerDataPokemon, pokedata,  pokedata2 } from './data.js';
 
 const dataModificada = traerDataPokemon(POKEMON) //ARRAY DE objetos con 3 caracteristicas;
 const Seccioncard = document.querySelector('#seccion-card');
 
-//console.log(Seccioncard);
-let stringTemplate = '';
-for(let i = 0; i < dataModificada.length; i++){
-    stringTemplate += `
-                        <div id='poke${dataModificada[i].identificador}' class='card'>
-                            <div class='card-items'> 
-                                <h2>${dataModificada[i].nombre}</h2>
-                                <img class="verPokemon" src="${dataModificada[i].imagen}"/>
-                                <button id="verPokemon_${dataModificada[i].identificador}" class="buttonStyle">Ver</button>
-                            </div>
-                        </div>   
-                        
-                    `
+
+let abc = document.getElementById('abc');
+let tipo = document.getElementById('tipo');
+let topten = document.getElementById('top10');
+
+//INIT FUNCTION LAYOUT
+
+function pokeLayout (data) {
+  let stringTemplate = '';
+  for(let i = 0; i < data.length; i++){
+      stringTemplate += `
+                          <div id='poke${data[i].identificador}' class='card'>
+                              <div class='card-items'> 
+                                  <h2>${data[i].nombre}</h2>
+                                  <img class="verPokemon" src="${data[i].imagen}"/>
+                                  <button id="verPokemon_${data[i].identificador}" class="buttonStyle">Ver</button>
+                              </div>
+                          </div>   
+                          
+                      `
+  }
+  //console.log(stringTemplate);
+  Seccioncard.innerHTML = stringTemplate;
+  //traerDataPokemon(POKEMON);
+
 }
 
-console.log(stringTemplate);
-Seccioncard.innerHTML = stringTemplate;
-traerDataPokemon(POKEMON);
+
+//console.log(Seccioncard);
+
+
+
+
+abc.addEventListener('click', function(){
+  //alert('ABC');
+  pokeLayout(dataModificada);
+})
+
+tipo.addEventListener('click', function(){
+  //alert('tipo');
+ 
+  pokeLayout(pokedata);
+})
+
+topten.addEventListener('click', function(){
+  //alert('topten');
+})
+
+
+
+
+
+
 //Backtips y es la nueva forma de concatenar cadenas en es6 ${} interpolar variables
 
 
@@ -34,12 +69,14 @@ traerDataPokemon(POKEMON);
 
 
 
-//pokedata(POKEMON);
+
 //console.log(POKEMON);
-
-
+pokedata(POKEMON);
 pokedata2(POKEMON);
 console.log(POKEMON);
+
+
+//console.log(POKEMON);
 
 //menu bar 
 const navbarToggler = document.querySelector(".navbar-toggler");

@@ -9,22 +9,29 @@
     <script src="https://kit.fontawesome.com/214c83a375.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="container container-home">
+    <header>
+        <nav class="navbar">
+            <a href="#random" class="navbar-brand"><img src="imagenes/logo-3.png" style="width: 265px; vertical-align: middle;"></a>
+            <ul>
+              <li><a id="abc" href="#abc">A-Z / Z-A</a></li>
+              <li><a id="tipo" href="#tipo">TIPO</a></li>
+              <li><a id="top10" href="#top10">TOP 10 DE APARICIÓN</a></li>
+            </ul>
+            <button class="navbar-toggler">
+              <span></span>
+            </button>
+          </nav>
+    </header>
+    <main id="container" class="container">
         
-        <section id="sectionHome" class="sectionCeroHome">
-        
+        <section id="sectionHome" class="sectionCeroHome container-home">
           <div class="col-1">
-
             <div class="row infoHome">
-                <h4>Aquí encontrarás información TOP <br/> para que seas el mejor <br/> 
-              Maestro Pokemon </h4>
+                <p class="textHome">Aquí encontrarás toda la información <br/>que debes conocer para ser el mejor <br/>¡Maestro Pokemon!</p>
             </div>
-          
             <div class="row buttonHome">
-              
-              <a href="pokemon.html" id="atrapalosYa" class="buttonAtrapalosYa">¡Atrápalos Ya!</a>
+              <a href="" id="atrapalosYa" class="buttonAtrapalosYa">¡Atrápalos Ya!</a>
             </div>
-             
             <div class="row">
                 <div class="download">
                   <h4>Descarga <br/>Pokemon GO!</h4>
@@ -33,11 +40,9 @@
                       <img class="appStore" src="imagenes/app-store-esp.png" alt="">
                   </div>
                 </div>
-              
                 <div class="shareFriends">
                   <h4>Comparte <br/>con tus amigos</h4>
                   <div class="col socialButton">
-                    
                     <a href="https://pokemongolive.com/es/">
                       <i class="fab fa-facebook-f"></i>
                     </a>
@@ -50,17 +55,16 @@
                   </div>
                 </div>
             </div>
-            
-
+          </div>
+          <div class="col-2">
+          </div>
+        </section>
+        
+        <section id="sectionPokemon" class="sectionOne absolute">
+          <div id="seccion-card">
         </div>
-
-        <div class="col-2">
-
-        </div>
-
-        </div>
-       
-    </div>
+      </section>
+    </main>
     <script type="module" src="main.js"></script>
   </body>
 </html>

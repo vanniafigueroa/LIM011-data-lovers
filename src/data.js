@@ -23,6 +23,7 @@ export const pokedata = (POKEMON) => {
   console.log(pokedata);
 }
 
+
 export const pokedata2 = (POKEMON) => {
 
   POKEMON.reverse((a,b) => {
@@ -36,4 +37,3 @@ export const pokedata2 = (POKEMON) => {
   });
   console.log(pokedata2);
 }
-

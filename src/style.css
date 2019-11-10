@@ -23,13 +23,10 @@
 }
 
 .container-home{
-    background-image: url('imagenes/background.jpg');
+    background-image: url('imagenes/background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.container {
-    height: 100pv;
+    height: 100vh;
 }
 
 .sectionCeroHome {
@@ -52,28 +49,44 @@
 }
 
 .col-1 {
-  margin-top: 250px; 
+  margin-top: 0px; 
   width: 50%; 
+  padding: 10% 0;
 }   
 
 .infoHome {
     text-align: center;
+    margin-left: 10%;
+    display: flex;
+  
   
     
 }
 
-.infoHome h4 {
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.infoHome p {
+  margin-top: 25px;
     text-align: center;
     width: 100%;
     display: flex;
-    margin-left: 90px;
-    margin-top: 30px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 28px;
 }
 
 .buttonAtrapalosYa {
+
     margin: 0 auto;
-    width:160px;
-    height: 25px;
+    width:180px;
+    height: 40px;
     text-decoration: none;
     text-align: center;
     padding: 5px;
@@ -81,9 +94,11 @@
     font-size: 20px;
     color: #ffffff;
     background-color: #d63031;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 2px solid #d63031;
-    margin-left: 180px;
+    margin-left: 240px;
+    justify-content: end;
+    margin-top: 30px;
 }
 
 .buttonAtrapalosYa:hover {
@@ -97,6 +112,7 @@
 }
 
 .download {
+  margin-top: 50px;
  text-align: center;
  display: flex;
  width: 50%;
@@ -109,17 +125,19 @@
 
 .buttonDownload {
     /* display: flex; */
+    margin-top: 10px;
     width: 100%;
 }
 
 .shareFriends {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     width: 30%;
     justify-content: space-around;
     justify-content: flex-start;
     margin-bottom: 40px;
-    margin-right: 200px;
+    margin-right: 140px;
 }
 
 .shareFriends h4 {
@@ -128,6 +146,7 @@
 }
 
 .socialButton {
+  margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -216,7 +235,8 @@ img.appStore {
     
         .container {
           width: 100%;
-          margin-top: 120px;
+          
+      
         }
     
         .card {
