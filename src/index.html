@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8">
+    <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wiki Mon</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
- <main class= "container">
-    <div class = columna1>
-         <div id= "start">
-            <h1>Aqui encontrarás información top para ser el mejor maestro pokemon</h1>
-         </div>
-         <div id= "first">
-             <button type="button" id= "¡Atrapalos ya!">¡Atrapalos Ya!</button>
-         </div>
-         <div id= "second">
-            <h2>Descarga Pokemon Go</h2>
-         </div>
-         <div id= "third">
-            <h3>Comparte con tus amigos</h3>
-         </div> 
-    </div>
+    <script src="https://kit.fontawesome.com/214c83a375.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <a href="#random" class="navbar-brand"><img src="logo-3.png" style="width: 265px; vertical-align: middle;"></a>
+            <ul>
+              <li><a id="abc" href="#abc">A-Z / Z-A</a></li>
+              <li><a id="tipo" href="#tipo">TIPO</a></li>
+              <li><a id="top10" href="#top10">TOP 10 DE APARICIÓN</a></li>
+            </ul>
+            <button class="navbar-toggler">
+              <span></span>
+            </button>
+          </nav>
+    </header>
+    <main id="container" class="container">
+        
+        <section id="sectionHome" class="sectionCeroHome container-home">
+          <div class="col-1">
+            <div class="row infoHome">
+                <p class="textHome">Aquí encontrarás toda la información <br/>que debes conocer para ser el mejor <br/>¡Maestro Pokemon!</p>
+            </div>
+            <div class="row buttonHome">
+              <a href="" id="atrapalosYa" class="buttonAtrapalosYa">¡Atrápalos Ya!</a>
+            </div>
+            <div class="row">
+                <div class="download">
+                  <h4>Descarga <br/>Pokemon GO!</h4>
+                  <div class="col buttonDownload">
+                      <img class="playStore" src="play-store.png" alt="">
+                      <img class="appStore" src="app-store-esp.png" alt="">
+                  </div>
+                </div>
+                <div class="shareFriends">
+                  <h4>Comparte <br/>con tus amigos</h4>
+                  <div class="col socialButton">
+                    <a href="https://pokemongolive.com/es/">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://pokemongolive.com/es/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://pokemongolive.com/es/">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-2">
+          </div>
+        </section>
+        
+        <section id="sectionPokemon" class="sectionOne absolute">
+          <div id="seccion-card">
+        </div>
+      </section>
+    </main>
     <script type="module" src="main.js"></script>
- </main>  
-</body>
+  </body>
 </html>
